@@ -36,6 +36,7 @@ android {
         signingConfig signingConfigs.config_sign
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
+        manifestPlaceholders = [fabricApiKey: FABRIC_API_KEY]
     }
     buildTypes {
         release {
