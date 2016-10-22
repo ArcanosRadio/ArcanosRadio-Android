@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.activities.SettingsActivity">
+
+    <include layout="@layout/toolbar_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/title_settings_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_section_general"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_settings_general"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/check_keep_screen_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_keep_screen_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_hint_keep_screen_on"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_settings_network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_general"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_section_network"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_settings_network"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/check_mobile_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_mobile_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_hint_streaming_over_mobile"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

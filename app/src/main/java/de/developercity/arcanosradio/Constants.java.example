@@ -1,0 +1,9 @@
+package de.developercity.arcanosradio;
+
+public abstract class Constants {
+    public static final String ARCANOS_STREAMING_URL = "rtsp://mystream/file.stream";
+    public static final String PARSE_URL = "https://mybackend/parse/";
+    public static final String PARSE_APP = "myParseAppName";
+
+    public static final String CUSTOM_INTENT_FINISH_NOW_PLAYING = "my_intent_name";
+}

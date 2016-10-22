@@ -1,0 +1,51 @@
+default_platform :android
+
+platform :android do
+    before_all do
+        puts 'Inject environment variables'
+
+        env_vars = File.read('env_vars.properties').scan /(\S+)=(\S+)/
+        env_vars.each { |v| ENV[v.first] = v.last.gsub /\A['"]|['"]\Z/, '' }
+    end
+
+    desc "Runs all the tests"
+    lane :test do
+        gradle(task: "test")
+    end
+
+    desc "Submit a new Alpha Build to Crashlytics"
+    lane :alpha do
+        gradle(
+            task: "assemble",
+            build_type: 'Debug')
+        crashlytics(
+            api_token: ENV['CRASHLYTICS_API_TOKEN'],
+            build_secret: ENV['CRASHLYTICS_BUILD_SECRET'],
+            groups: "Dev"
+        )
+    end
+
+    desc "Submit a new Beta Build to Crashlytics"
+    lane :beta do
+        gradle(
+            task: "assemble",
+            build_type: 'Debug')
+        crashlytics(
+            api_token: ENV['CRASHLYTICS_API_TOKEN'],
+            build_secret: ENV['CRASHLYTICS_BUILD_SECRET'],
+            groups: "qa-1"
+        )
+    end
+
+    desc "Deploy a new version to the Google Play"
+    lane :deploy do
+        gradle(task: "assembleRelease")
+        supply
+    end
+
+    after_all do |lane|
+    end
+
+    error do |lane, exception|
+    end
+end

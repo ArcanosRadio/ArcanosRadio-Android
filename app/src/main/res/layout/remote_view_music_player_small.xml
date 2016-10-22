@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/image_view_album"
+        android:layout_width="@dimen/notification_image_size_small"
+        android:layout_height="@dimen/notification_image_size_small"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:background="@color/colorBlack"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arcanos" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/image_view_album"
+        android:layout_toLeftOf="@+id/layout_play_controls"
+        android:layout_toRightOf="@+id/image_view_album"
+        android:layout_toStartOf="@+id/layout_play_controls"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:maxLines="1"
+            android:text="@string/now_playing_song_placeholder"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/text_view_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/now_playing_artist_placeholder"
+            android:textColor="@color/textSecondary"
+            android:textSize="@dimen/text_size_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_play_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/clickable_area"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <FrameLayout
+            android:id="@+id/button_play_toggle"
+            android:layout_width="@dimen/clickable_area"
+            android:layout_height="@dimen/clickable_area"
+            android:background="@drawable/selector_remote_views_action_background"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/image_view_play_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_hourglass_empty_white_36dp" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

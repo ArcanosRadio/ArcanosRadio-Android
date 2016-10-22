@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name" translatable="false">Arcanos Radio</string>
+
+    <!-- Generics -->
+    <string name="hint_ok">OK</string>
+    <string name="hint_yes">Yes</string>
+    <string name="hint_no">No</string>
+    <string name="arcanos_web_rock">Arcanos Web Rock</string>
+
+    <string name="generic_msg_error">Oops! Something went wrong. Please try again.</string>
+
+    <!-- Notifications -->
+    <string name="notification_mobile_data_disabled">Playback over mobile data is not enabled!</string>
+    <string name="notification_no_network_title">No network!</string>
+    <string name="notification_no_network_text">Playback will resume when the app reconnects.</string>
+
+    <!-- NowPlayingActivity -->
+    <string name="now_playing_title">Arcanos Web Rock</string>
+
+    <string name="now_playing_song_placeholder">[song]</string>
+    <string name="now_playing_artist_placeholder">[artist]</string>
+    <string name="now_playing_lyrics_placeholder">[lyrics]</string>
+    <string name="now_playing_volume">Volume</string>
+
+    <string name="now_playing_action_share">Share</string>
+    <string name="now_playing_action_open_in_browser">Open in browser</string>
+    <string name="now_playing_action_cast">Cast</string>
+
+    <string name="now_playing_msg_artist_url_not_available">This artist\'s url is not available!</string>
+    <string name="now_playing_msg_share_title">Share Arcanos Web Rock</string>
+    <string name="now_playing_msg_share">I\'m listening to %1$s by %2$s on Arcanos Web Rock! Get the app at https://play.google.com/store/apps/details?id=de.developercity.arcanosradio - arcanosmc.com.br #ArcanosWebRock</string>
+
+    <string name="now_playing_connection_warning">Please check your connection and/or preferences.</string>
+
+    <string name="now_playing_menu_settings">Settings</string>
+    <string name="now_playing_menu_about">About</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_msg_save">Changes saved</string>
+
+    <string name="settings_section_general">General</string>
+    <string name="settings_section_network">Network</string>
+
+    <string name="settings_hint_keep_screen_on">Keep screen on (this will decrease battery life)</string>
+    <string name="settings_hint_streaming_over_mobile">Enable streaming over mobile data</string>
+
+    <!-- AboutActivity -->
+    <string name="about_title">About</string>
+
+    <string name="about_section_about">About</string>
+    <string name="about_section_about_text">
+        This app was developed by:
+        \n\n
+        <b>Filipe Belatti</b>
+        \n
+        fibelatti@gmail.com
+        \n
+        <a href="https://github.com/fibelatti">github.com/fibelatti</a>
+        \n\n
+        and
+        \n\n
+        <b>Luiz Barbosa</b>
+        \n
+        luiz@developercity.de
+        \n
+        <a href="https://github.com/luizmb">github.com/luizmb</a>
+        \n\n
+        It is intended to promote Arcanos Web Rock online radio, commanded by Jair Barbosa,
+        member of Arcanos Motoclube.
+        \n\n
+    </string>
+
+    <string name="about_section_licenses">Licenses</string>
+    <string name="about_section_licenses_text" translatable="false">
+        <b>Parse</b>
+        \n\n
+        BSD License
+        \n\n
+        For Parse Android SDK software
+        \n\n
+        Copyright (c) 2015-present, Parse, LLC. All rights reserved.
+        \n\n
+        Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        \n\n
+        * Redistributions of source code must retain the above copyright notice, this
+        list of conditions and the following disclaimer.
+        \n\n
+        * Redistributions in binary form must reproduce the above copyright notice,
+        this list of conditions and the following disclaimer in the documentation
+        and/or other materials provided with the distribution.
+        \n\n
+        * Neither the name Parse nor the names of its contributors may be used to
+        endorse or promote products derived from this software without specific
+        prior written permission.
+        \n\n
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        \n\n\n
+
+        <b>Butterknife</b>
+        \n\n
+        Copyright 2013 Jake Wharton
+        \n\n
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        \n\n
+        http://www.apache.org/licenses/LICENSE-2.0
+        \n\n
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+        \n\n\n
+
+        <b>Clans Floating Action Button</b>
+        \n\n
+        Copyright 2015 Dmytro Tarianyk
+        \n\n
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        \n\n
+        http://www.apache.org/licenses/LICENSE-2.0
+        \n\n
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+        \n\n\n
+    </string>
+</resources>

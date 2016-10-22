@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.developercity.arcanosradio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ArcanosRadioApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".views.activities.NowPlayingActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".views.activities.SettingsActivity"
+            android:label="@string/settings_title"
+            android:parentActivityName=".views.activities.NowPlayingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.activities.NowPlayingActivity" />
+        </activity>
+
+        <activity
+            android:name=".views.activities.AboutActivity"
+            android:label="@string/about_title"
+            android:parentActivityName=".views.activities.NowPlayingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.activities.NowPlayingActivity" />
+        </activity>
+
+        <service
+            android:name=".services.notification.NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="de.developercity.arcanosradio.ACTION.PLAY_TOGGLE" />
+                <action android:name="de.developercity.arcanosradio.ACTION.STOP_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.metadata.MetadataPoolingService"
+            android:exported="false" />
+
+        <service
+            android:name=".services.playback.remote.RemoteControlService"
+            android:exported="false" />
+    </application>
+</manifest>

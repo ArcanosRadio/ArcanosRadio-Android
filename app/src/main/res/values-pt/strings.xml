@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generics -->
+    <string name="hint_ok">OK</string>
+    <string name="hint_yes">Sim</string>
+    <string name="hint_no">Não</string>
+    <string name="arcanos_web_rock">Arcanos Web Rock</string>
+
+    <string name="generic_msg_error">Oops! Alguma coisa deu errado. Por favor tente novamente.</string>
+
+    <!-- Notifications -->
+    <string name="notification_mobile_data_disabled">Reprodução através de 3G/4G não habilitada!</string>
+    <string name="notification_no_network_title">Sem conexão!</string>
+    <string name="notification_no_network_text">Aguardando para continuar.</string>
+
+    <!-- NowPlayingActivity -->
+    <string name="now_playing_title">Arcanos Web Rock</string>
+
+    <string name="now_playing_song_placeholder">[música]</string>
+    <string name="now_playing_artist_placeholder">[artista]</string>
+    <string name="now_playing_lyrics_placeholder">[letra]</string>
+    <string name="now_playing_volume">Volume</string>
+
+    <string name="now_playing_action_share">Compartilhar</string>
+    <string name="now_playing_action_open_in_browser">Abrir no navegador</string>
+    <string name="now_playing_action_cast">Transmitir</string>
+
+    <string name="now_playing_msg_artist_url_not_available">A URL deste artista ainda não está disponível!</string>
+    <string name="now_playing_msg_share_title">Compartilhar Arcanos Web Rock</string>
+    <string name="now_playing_msg_share">Estou ouvindo %1$s por %2$s na Arcanos Web Rock! Baixe o app https://play.google.com/store/apps/details?id=de.developercity.arcanosradio - arcanosmc.com.br #ArcanosWebRock</string>
+
+    <string name="now_playing_connection_warning">Por favor verifique sua conexão e/ou preferências.</string>
+
+    <string name="now_playing_menu_settings">Configurações</string>
+    <string name="now_playing_menu_about">Sobre</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Configurações</string>
+
+    <string name="settings_msg_save">Alterações salvas</string>
+
+    <string name="settings_section_general">Geral</string>
+    <string name="settings_section_network">Rede</string>
+
+    <string name="settings_hint_keep_screen_on">Manter a tela ligada (reduz o tempo de bateria)</string>
+    <string name="settings_hint_streaming_over_mobile">Ouvir a rádio através de 3G/4G</string>
+
+    <!-- AboutActivity -->
+    <string name="about_title">Sobre</string>
+
+    <string name="about_section_about">Sobre</string>
+    <string name="about_section_about_text">
+        Este app foi desenvolvido por:
+        \n\n
+        <b>Filipe Belatti</b>
+        \n
+        fibelatti@gmail.com
+        \n
+        <a href="https://github.com/fibelatti">github.com/fibelatti</a>
+        \n\n
+        e
+        \n\n
+        <b>Luiz Barbosa</b>
+        \n
+        luiz@developercity.de
+        \n
+        <a href="https://github.com/luizmb">github.com/luizmb</a>
+        \n\n
+        Sua intenção é promover a rádio online Arcanos Web Rock, comandada por Jair Barbosa,
+        membro do Arcanos Motoclube de São Paulo.
+        \n\n
+    </string>
+
+    <string name="about_section_licenses">Licenças</string>
+</resources>
