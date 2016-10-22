@@ -31,7 +31,7 @@ android {
         applicationId "de.developercity.arcanosradio"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 21
+        versionCode 22
         versionName "1.0.1-beta.2"
         signingConfig signingConfigs.config_sign
         renderscriptTargetApi 19
