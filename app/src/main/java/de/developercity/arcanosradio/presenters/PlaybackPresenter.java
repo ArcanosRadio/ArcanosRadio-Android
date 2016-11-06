@@ -293,7 +293,9 @@ public class PlaybackPresenter implements IPlaybackPresenter,
 
     @Override
     public boolean createOpenBrowserIntent() {
-        String artistUrl = currentSong.getArtist() != null
+        String artistUrl =
+                currentSong != null
+                && currentSong.getArtist() != null
                 && currentSong.getArtist().getUrl() != null ? currentSong.getArtist().getUrl() : "";
 
         if (artistUrl != null && !artistUrl.isEmpty()) {
