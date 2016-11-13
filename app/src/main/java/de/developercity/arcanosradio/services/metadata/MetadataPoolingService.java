@@ -11,6 +11,7 @@ import android.util.Log;
 import bolts.Continuation;
 import bolts.Task;
 import de.developercity.arcanosradio.ArcanosRadioApplication;
+import de.developercity.arcanosradio.Constants;
 import de.developercity.arcanosradio.models.Playlist;
 import de.developercity.arcanosradio.services.generics.LocalBinder;
 import de.developercity.arcanosradio.services.storage.IStorage;
@@ -29,7 +30,8 @@ public class MetadataPoolingService extends Service
         @Override
         public void run() {
             downloadCurrentSong();
-            handler.postDelayed(this, 5 * 1000);
+            Integer poolingTime = ArcanosRadioApplication.getStorage().readConfig(Constants.POOLING_TIME_ACTIVE_CONFIG_KEY);
+            handler.postDelayed(this, poolingTime * 1000);
         }
     };
 

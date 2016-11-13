@@ -27,7 +27,7 @@
 
     <string name="now_playing_msg_artist_url_not_available">A URL deste artista ainda não está disponível!</string>
     <string name="now_playing_msg_share_title">Compartilhar Arcanos Web Rock</string>
-    <string name="now_playing_msg_share">Estou ouvindo %1$s por %2$s na Arcanos Web Rock! Baixe o app https://play.google.com/store/apps/details?id=de.developercity.arcanosradio - arcanosmc.com.br #ArcanosWebRock</string>
+    <string name="now_playing_msg_share">Estou ouvindo %1$s por %2$s na Arcanos Web Rock! Baixe o app em %3$s #ArcanosWebRock</string>
 
     <string name="now_playing_connection_warning">Por favor verifique sua conexão e/ou preferências.</string>
 

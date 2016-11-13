@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.widget.SeekBar;
 
 import de.developercity.arcanosradio.ArcanosRadioApplication;
+import de.developercity.arcanosradio.Constants;
 import de.developercity.arcanosradio.R;
 import de.developercity.arcanosradio.helpers.ImageHelper;
 import de.developercity.arcanosradio.models.Playlist;
@@ -278,7 +279,9 @@ public class PlaybackPresenter implements IPlaybackPresenter,
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.now_playing_msg_share, songName, artistName));
+
+            String url = ArcanosRadioApplication.getStorage().readConfig(Constants.SHARE_URL_CONFIG_KEY);
+            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.now_playing_msg_share, songName, artistName, url));
 
             Intent chooser = Intent.createChooser(intent, context.getString(R.string.now_playing_msg_share_title));
             chooser.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

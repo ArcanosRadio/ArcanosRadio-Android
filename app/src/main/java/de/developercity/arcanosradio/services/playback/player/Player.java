@@ -7,6 +7,7 @@ import android.support.v4.media.session.PlaybackStateCompat;
 
 import com.crashlytics.android.Crashlytics;
 
+import de.developercity.arcanosradio.ArcanosRadioApplication;
 import de.developercity.arcanosradio.Constants;
 
 class Player implements IPlayer,
@@ -48,7 +49,8 @@ class Player implements IPlayer,
         if (!isPlaying()) {
             try {
                 mp.reset();
-                mp.setDataSource(Constants.ARCANOS_STREAMING_URL);
+                String url = ArcanosRadioApplication.getStorage().readConfig(Constants.STREAMING_URL_CONFIG_KEY);
+                mp.setDataSource(url);
                 mp.prepareAsync();
 
                 handler.postDelayed(runnable, 100);

@@ -28,7 +28,7 @@
 
     <string name="now_playing_msg_artist_url_not_available">This artist\'s url is not available!</string>
     <string name="now_playing_msg_share_title">Share Arcanos Web Rock</string>
-    <string name="now_playing_msg_share">I\'m listening to %1$s by %2$s on Arcanos Web Rock! Get the app at https://play.google.com/store/apps/details?id=de.developercity.arcanosradio - arcanosmc.com.br #ArcanosWebRock</string>
+    <string name="now_playing_msg_share">I\'m listening to %1$s by %2$s on Arcanos Web Rock! Get the app at %3$s #ArcanosWebRock</string>
 
     <string name="now_playing_connection_warning">Please check your connection and/or preferences.</string>
 

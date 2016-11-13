@@ -2,7 +2,9 @@ package de.developercity.arcanosradio.services.storage;
 
 import android.content.Context;
 
+import com.crashlytics.android.Crashlytics;
 import com.parse.Parse;
+import com.parse.ParseConfig;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -50,6 +52,11 @@ public class ParseStorage implements IStorage {
                 .build();
 
         Parse.initialize(parseConfig);
+        try {
+            ParseConfig.get();
+        } catch (ParseException e) {
+            Crashlytics.logException(e);
+        }
     }
 
     public Task<Playlist> getCurrentSong() {
@@ -143,5 +150,10 @@ public class ParseStorage implements IStorage {
         } catch (ParseException e) {
             return null;
         }
+    }
+
+    @Override
+    public <T> T readConfig(String key) {
+        return (T)ParseConfig.getCurrentConfig().get(key);
     }
 }

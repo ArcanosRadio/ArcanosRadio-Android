@@ -25,4 +25,6 @@ public interface IStorage {
     UserPreferences getUserPreferences();
 
     UserPreferences setUserPreferences(UserPreferences preferences);
+
+    <T> T readConfig(String key);
 }
