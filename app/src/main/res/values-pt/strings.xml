@@ -50,26 +50,24 @@
 
     <string name="about_section_about">Sobre</string>
     <string name="about_section_about_text">
-        Este app foi desenvolvido por:
-        \n\n
-        <b>Filipe Belatti</b>
-        \n
-        fibelatti@gmail.com
-        \n
-        <a href="https://github.com/fibelatti">github.com/fibelatti</a>
-        \n\n
-        e
-        \n\n
-        <b>Luiz Barbosa</b>
-        \n
-        luiz@developercity.de
-        \n
-        <a href="https://github.com/luizmb">github.com/luizmb</a>
-        \n\n
-        Sua intenção é promover a rádio online Arcanos Web Rock, comandada por Jair Barbosa,
-        membro do Arcanos Motoclube de São Paulo.
-        \n\n
-    </string>
+        Equipe:\n\n
 
+        <b>Filipe Belatti</b>\n
+        <i>Desenvolvimento Android e Concepção de UX para ambas plataformas</i>\n
+        fibelatti@gmail.com\n
+        <a href="https://github.com/fibelatti">github.com/fibelatti</a>\n\n\n
+
+        <b>Luiz Rodrigo Martins Barbosa</b>\n
+        <i>Desenvolvimento iOS, server API e website</i>\n
+        <a href="https://github.com/luizmb">github.com/luizmb</a>\n\n\n
+
+        <b>Jair Gonçalves Barbosa</b>\n
+        <i>Criador, produtor e DJ da Arcanos Web Radio, membro do Arcanos Motoclube de São Paulo</i>\n
+        <a href="http://www.arcanosmc.com.br">arcanosmc.com.br</a>\n\n\n
+
+        <b>Mariana Martins Barbosa</b>\n
+        <i>Design</i>\n
+        <a href="http://marimartins.art.br">marimartins.art.br</a>\n\n\n
+    </string>
     <string name="about_section_licenses">Licenças</string>
 </resources>

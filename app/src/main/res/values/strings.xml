@@ -51,25 +51,24 @@
 
     <string name="about_section_about">About</string>
     <string name="about_section_about_text">
-        This app was developed by:
-        \n\n
-        <b>Filipe Belatti</b>
-        \n
-        fibelatti@gmail.com
-        \n
-        <a href="https://github.com/fibelatti">github.com/fibelatti</a>
-        \n\n
-        and
-        \n\n
-        <b>Luiz Barbosa</b>
-        \n
-        luiz@developercity.de
-        \n
-        <a href="https://github.com/luizmb">github.com/luizmb</a>
-        \n\n
-        It is intended to promote Arcanos Web Rock online radio, commanded by Jair Barbosa,
-        member of Arcanos Motoclube.
-        \n\n
+        Team:\n\n
+
+        <b>Filipe Belatti</b>\n
+        <i>Android development, UX conception for both platforms</i>\n
+        fibelatti@gmail.com\n
+        <a href="https://github.com/fibelatti">github.com/fibelatti</a>\n\n\n
+
+        <b>Luiz Rodrigo Martins Barbosa</b>\n
+        <i>iOS development, server API and website</i>\n
+        <a href="https://github.com/luizmb">github.com/luizmb</a>\n\n\n
+
+        <b>Jair Gonçalves Barbosa</b>\n
+        <i>Creator, producer and DJ at Arcanos Web Radio, member of the Arcanos Motoclube from São Paulo</i>\n
+        <a href="http://www.arcanosmc.com.br">arcanosmc.com.br</a>\n\n\n
+
+        <b>Mariana Martins Barbosa</b>\n
+        <i>Design</i>\n
+        <a href="http://marimartins.art.br">marimartins.art.br</a>\n\n\n
     </string>
 
     <string name="about_section_licenses">Licenses</string>
