@@ -16,6 +16,13 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
 android {
     signingConfigs {
         config_sign {
@@ -25,14 +32,14 @@ android {
         }
     }
 
-    compileSdkVersion 23
+    compileSdkVersion 24
     buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "de.developercity.arcanosradio"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 22
-        versionName "1.0.1-beta.2"
+        versionCode 23
+        versionName "1.0.0.3"
         signingConfig signingConfigs.config_sign
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
@@ -52,15 +59,19 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-annotations:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
     compile 'com.parse.bolts:bolts-android:1.+'
     compile 'com.parse:parse-android:1.+'
-
     compile('com.crashlytics.sdk.android:crashlytics:2.6.4@aar') {
         transitive = true;
     }
     compile 'com.jakewharton:butterknife:8.2.1'
     apt 'com.jakewharton:butterknife-compiler:8.2.1'
     compile 'com.github.clans:fab:1.6.4'
+    androidTestCompile 'com.android.support:support-annotations:24.0.0'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'tools.fastlane:screengrab:0.5.5'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
 }
