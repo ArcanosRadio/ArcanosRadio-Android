@@ -39,14 +39,14 @@ public class ParseStorage implements IStorage {
 
                             req = new ParseHttpRequest.Builder(req)
                                     .setUrl(req.getUrl()
-                                            .replace("http://", "https://"))
+                                        .replace("http://", "https://"))
                                     .build();
                         }
                         return chain.proceed(req);
                     }
                 })
                 .applicationId(Constants.PARSE_APP)
-                .clientKey("")
+                .clientKey(Constants.PARSE_CLIENT_KEY)
                 .server(Constants.PARSE_URL)
                 .enableLocalDataStore()
                 .build();

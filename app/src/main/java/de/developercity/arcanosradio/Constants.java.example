@@ -1,9 +1,13 @@
 package de.developercity.arcanosradio;
 
 public abstract class Constants {
-    public static final String ARCANOS_STREAMING_URL = "rtsp://mystream/file.stream";
+    public static final String STREAMING_URL_CONFIG_KEY = "STREAMING_URL_CONFIG_KEY";
+    public static final String SHARE_URL_CONFIG_KEY = "SHARE_URL_CONFIG_KEY";
+    public static final String POOLING_TIME_ACTIVE_CONFIG_KEY = "POOLING_TIME_ACTIVE_CONFIG_KEY";
+
     public static final String PARSE_URL = "https://mybackend/parse/";
     public static final String PARSE_APP = "myParseAppName";
+    public static final String PARSE_CLIENT_KEY = "myParseClientKey";
 
     public static final String CUSTOM_INTENT_FINISH_NOW_PLAYING = "my_intent_name";
 }
